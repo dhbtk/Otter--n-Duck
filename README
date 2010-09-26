@@ -1,0 +1,1 @@
+Includes the SDL_collide library, slightly adapted to work with pure C, gotten from http://sdl-collide.sourceforge.net/

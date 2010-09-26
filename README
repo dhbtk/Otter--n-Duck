@@ -1,1 +1,30 @@
-Includes the SDL_collide library, slightly adapted to work with pure C, gotten from http://sdl-collide.sourceforge.net/
+The Crackin' Good Adventures of Otter 'n Duck!
+==============================================
+
+The FaiD game! A 2D side-scroller game featuring Otter _and_ Duck, fighting these damn trolls!
+But to make the game happen, help is needed! Specifically:
+
+* C coders
+* Some art
+* Music!
+* Play testers!
+* An excuse plot
+
+Contact NieXS in the fora, or on IRC (#otternduck) at Foonetic.
+
+Building/Running
+================
+
+Otter 'n Duck uses waf, which means you need to have python installed. Compiling with it is
+pretty simple:
+
+* Verify that you have SDL, SDL_image, SDL_mixer, SDL_gfx and SDL_ttf installed
+* Run, from the command-line, ./waf configure
+* Run ./waf
+* Run by calling build/default/src/otternduck
+
+Licensed under the New BSD License; see LICENSE for details.
+
+Includes the SDL library.
+Includes the SDL_collide library, slightly adapted to work with pure C, gotten from
+http://sdl-collide.sourceforge.net/

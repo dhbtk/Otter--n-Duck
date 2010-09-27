@@ -11,7 +11,7 @@ obj = bld(
 	ccflags   = ['-g']
 )
 if bld.env['LMINGW'] == 'mingw32':
-	obj.libs = ['SDL_mixer','mingw32','SDLmain']
+	obj.libs = ['SDL_image','mingw32','SDLmain']
 else:
-	obj.libs = ['SDL_mixer']
+	obj.libs = ['SDL_image']
 obj.find_sources_in_dirs('.')

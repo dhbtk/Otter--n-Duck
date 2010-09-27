@@ -33,10 +33,10 @@ def configure(conf):
 		conf.env["LMINGW"] = 'mingw32'
 	conf.check_cfg(package='glib-2.0',uselib_store = 'GLIB',mandatory = 1,args = '--cflags --libs')
 	conf.check_cfg(path='sdl-config',package='',uselib_store = 'SDL',mandatory = 1,args = '--cflags --libs')
-	conf.check(header_name='sdl_mixer.h',mandatory=1)
-	conf.check(header_name='sdl_gfx.h',mandatory=1)
-	conf.check(header_name='sdl_image.h',mandatory=1)
-	conf.check(header_name='sdl_ttf.h',mandatory=1)
+	#conf.check(header_name='sdl_mixer.h',mandatory=1)
+	#conf.check(header_name='sdl_gfx.h',mandatory=1)
+	conf.check(header_name='SDL_image.h',mandatory=1)
+	#conf.check(header_name='sdl_ttf.h',mandatory=1)
 	conf.define('VERSION',VERSION)
 	conf.env['VERSION'] = VERSION
 	conf.write_config_header('config.h')

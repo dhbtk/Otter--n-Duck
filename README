@@ -18,7 +18,7 @@ Building/Running
 Otter 'n Duck uses waf, which means you need to have python installed. Compiling with it is
 pretty simple:
 
-* Verify that you have SDL, SDL_image, SDL_mixer, SDL_gfx and SDL_ttf installed
+* Verify that you have SDL, SDL_image and SDL_mixer installed
 * Run, from the command-line, ./waf configure
 * Run ./waf
 * Run by calling build/default/src/otternduck

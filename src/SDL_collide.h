@@ -66,7 +66,7 @@ int SDL_CollideTransparentPixel(SDL_Surface *surface , int u , int v);
  * @return non-zero on collision, 0 otherwise
  */
 int SDL_CollidePixel(SDL_Surface *as , int ax , int ay ,
-                       SDL_Surface *bs , int bx , int by, int skip = 4);
+                       SDL_Surface *bs , int bx , int by, int skip);
 
 /**
  * Bounding-box collision between two surfaces.
@@ -91,7 +91,7 @@ int SDL_CollideBoundingBox(SDL_Surface *sa , int ax , int ay ,
  *
  * @return non-zero on collision, 0 otherwise
  */
-int SDL_CollideBoundingBox(SDL_Rect a , SDL_Rect b);
+int SDL_CollideBoundingBoxRect(SDL_Rect a , SDL_Rect b);
 
 /**
  * tests whether 2 circles intersect
@@ -110,7 +110,7 @@ int SDL_CollideBoundingCircle(int x1 , int y1 , int r1 ,
  * the circle and approximate the radius using the width and height
  * of the surface (for example a rect of 4x6 would have r = 2.5).
  */
-int SDL_CollideBoundingCircle(SDL_Surface *a , int x1 , int y1 ,
+int SDL_CollideBoundingCircleSurface(SDL_Surface *a , int x1 , int y1 ,
                                 SDL_Surface *b , int x2 , int y2 ,
                                 int offset);
 
